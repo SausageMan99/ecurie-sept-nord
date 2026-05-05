@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Écurie Sept-Nord
 
-## Getting Started
+Prototype portfolio Hacker Studio pour une niche automotive premium : atelier Porsche indépendant fictif en Normandie.
 
-First, run the development server:
+Ce site a été créé pour corriger le problème du prototype Atelier Cauchois : trop proche d’Atelier Montclair, même niche architecture/intérieur, même vocabulaire beige/serif/carnet de chantier.
+
+## Direction
+
+Concept : atelier de diagnostic Porsche, télémétrie et inspection bay.
+
+Le site ne vend pas du lifestyle automobile. Il vend de la confiance mécanique : protocole, symptômes, arbitrage, trace de sortie.
+
+## Stack
+
+Next.js App Router, TypeScript, Tailwind CSS v4, `next/font`, Metadata API, JSON-LD CreativeWork, sitemap, robots noindex.
+
+## Lancer
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Vérifier
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run lint
+npm run build
+npm audit --audit-level=moderate
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Pages
 
-## Learn More
+`/` homepage radicale automotive.
 
-To learn more about Next.js, take a look at the following resources:
+`/atelier` protocole.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`/brief` fiche véhicule.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Déploiement Vercel
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Importer le repo GitHub dans Vercel. Domaine placeholder : `https://ecurie-sept-nord.vercel.app`.
